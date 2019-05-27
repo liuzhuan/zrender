@@ -565,6 +565,7 @@ export function normalizeCssArray(val) {
 }
 
 /**
+ * 自制断言函数
  * @memberOf module:zrender/core/util
  * @param {boolean} condition
  * @param {string} message

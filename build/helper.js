@@ -69,6 +69,7 @@ exports.build = function (configs) {
 };
 
 /**
+ * 实时监测代码改动，并输出不同的样式
  * @param {Object} singleConfig A single rollup config:
  *  See: <https://rollupjs.org/#big-list-of-options>
  *  For example:
@@ -106,6 +107,8 @@ exports.watch = function (singleConfig) {
 };
 
 /**
+ * 遍历源码路径，并暴露回调函数接口
+ * 
  * @param {string} srcDir Absolute directory path.
  * @param {Function} [cb] Params: {
  *      fileName: like 'some.js', without dir path.
@@ -243,6 +246,7 @@ const COLOR_MAP = {
 };
 
 /**
+ * 自制带颜色输出的打印函数
  * Print colored text with `console.log`.
  *
  * Usage:
